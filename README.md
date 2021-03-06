@@ -1,3 +1,11 @@
+MAJ SDE 06/03/2021 :
+ - 2 applications NodeJS dans le répertoire "Sample-01"
+ - Le serveur API est en NodeJS, démarré sur l'adresse http://localhost:3001/ et est intégré dans api-server.js en racine du répertoire "Sample-01"
+ - La partie cliente est intégrée dans un serveur NodeJS, démarré sur l'adresse http://localhost:3000/ et est intégré dans server.js en racine du répertoire "Sample-01"
+    * server.js est juste une encapsulation d'une app Sample React dans un serveur web NodeJS express
+    * Les sources de la partie cliente sont dans le répertoire "Sample-01/src". Le fichier racine est index.js. C'est dans ce fichier, qu'il faut paramétrer le provider d'authentification Auth0 (balise "Auth0Provider"). Il est paramétré avec le compte de test UpStreamPay "dev-ze5ndegj.eu.auth0.com" et l'app client USP-ClientBackOffice (cf https://manage.auth0.com/dashboard/eu/dev-ze5ndegj/applications/Dx2XOvlzc3D2YpEouqmamA1Ft8e9dkb5/settings). Le auth_config.json est aussi à configurer avec ces paramètres.
+    * Le core HTML est dans "Sample-01/public"
+
 # Auth0 React Samples
 
 [![CircleCI](https://circleci.com/gh/auth0-samples/auth0-react-samples.svg?style=svg)](https://circleci.com/gh/auth0-samples/auth0-react-samples)
